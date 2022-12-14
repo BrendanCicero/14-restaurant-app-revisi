@@ -1,0 +1,146 @@
+.resta {
+  display: grid;
+  grid-row-gap: 20px;
+}
+
+@media screen and (min-width: 455px) {
+  .headline__content {
+    padding: 16px 16px;
+  }
+
+  .headline__title {
+    font-size: 28px;
+  }
+
+  .headline__description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
+
+  .open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .resta-menu-grid {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    background: url("../public/images/heros/hero-image_2-small.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .hero {
+    background: url("../public/images/heros/hero-image_2-large.jpg");
+    background-position: center;
+    background-size: auto;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .headline__content {
+    margin: 0 auto;
+    max-width: 650px;
+  }
+
+  .resta__content {
+    padding: 16px 32px 32px 32px;
+  }
+
+  .resta__title {
+    font-size: 18px;
+  }
+
+  .resta__description {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .resta {
+    min-width: 800px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .resta {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 16px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .nav__list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav__list,
+  .hero,
+  header,
+  footer {
+    min-width: 800px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .headline {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .headline__content {
+    padding: 16px 32px;
+  }
+
+  .resta {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+  }
+
+  .hero {
+    min-width: 1000px;
+  }
+}
