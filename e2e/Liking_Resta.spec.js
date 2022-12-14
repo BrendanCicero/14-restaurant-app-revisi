@@ -28,7 +28,7 @@ Scenario("liking one resta", async ({ I }) => {
 
   I.amOnPage("/#/favorite");
   I.seeElement(".resta__list");
-  const likedRestaTitle = await I.grabTextFrom(".resta__title");
+  const likedRestaTitle = await I.grabTextFrom(".resta__list a");
   assert.strictEqual(firstRestaTitle, likedRestaTitle);
 });
 
@@ -48,7 +48,7 @@ Scenario("unlike resta", async ({ I }) => {
   I.amOnPage("/#/favorite");
   I.seeElement(".resta__list");
 
-  const likedRestaTitle = await I.grabTextFrom(".resta__title");
+  const likedRestaTitle = await I.grabTextFrom(".resta__list a");
   assert.strictEqual(firstRestaTitle, likedRestaTitle);
 
   I.click(likedRestaTitle);
