@@ -47,6 +47,10 @@
   .resta-menu-grid {
     display: block;
   }
+
+  .resta-menu-flex {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -90,12 +94,6 @@
   }
 }
 
-@media screen and (max-width: 699px) {
-  .resta {
-    min-width: 800px;
-  }
-}
-
 @media screen and (min-width: 700px) {
   .resta {
     grid-template-columns: 1fr 1fr;
@@ -108,15 +106,6 @@
   .nav__list {
     max-width: 800px;
     margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .nav__list,
-  .hero,
-  header,
-  footer {
-    min-width: 800px;
   }
 }
 

@@ -23,7 +23,7 @@ const createRestaDetailTemplate = (resta) => `
   
   <div class="resta-menu">
     <h3 class='center'>Menu</h3>
-    <div class='resta-menu-grid'>
+    <div class='resta-menu-flex'>
       <div class="resta-food">
         <h4 class='center'>Food</h4>
         <ul>

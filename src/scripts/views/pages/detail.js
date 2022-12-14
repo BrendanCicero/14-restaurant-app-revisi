@@ -2,7 +2,7 @@ import UrlParser from "../../routes/url-parser";
 import RestaurantSource from "../../data/restaurant-source";
 import { createRestaDetailTemplate } from "../templates/template-creator";
 import LikeButtonPresenter from "../../utils/like-button-presenter";
-import FavoriteRestaIdb from '../../data/favorite-resta-idb';
+import FavoriteRestaIdb from "../../data/favorite-resta-idb";
 
 const Detail = {
   async render() {
@@ -32,7 +32,6 @@ const Detail = {
         pictureId: restaItem.pictureId,
       },
     });
-    console.log(restaItem.id);
   },
 };
 
