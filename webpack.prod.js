@@ -21,7 +21,12 @@ module.exports = merge(common, {
       },
     ],
   },
-  plugins: [new BundleAnalyzerPlugin()],
+  plugins: [
+    new BundleAnalyzerPlugin({
+      analyzerMode: "static",
+      openAnalyzer: false,
+    }),
+  ],
   optimization: {
     splitChunks: {
       chunks: "all",
